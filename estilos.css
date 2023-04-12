@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: black;
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url("https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png");
+    width: 27px;
+    height: 27px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    border-radius: 80px;
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+main{
+    margin-top: 30px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 6px 1px 6px 0px #20212447;
+}
+
+main .main-input .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    width: 18px;
+    height: 18px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 18px;
+    height: 18px;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-input .cam-icon{
+    background-image:url("data:image/png;base64,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");
+    width: 30px;
+    height: 30px;
+    padding-right: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #F8F9FA;
+    border: 0;
+    font-size: 14px;
+    color: #5F6368;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-right: 12px;
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #C6C6C6;
+    box-shadow: 0 0.5px 1px 0 #000001;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #F2F2F2;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 15px;
+    border-top: 1px solid #E4E4E4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5F6368
+}
